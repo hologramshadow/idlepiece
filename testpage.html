@@ -1,0 +1,73 @@
+<html>
+  <html>
+    <link rel="stylesheet" href="idlegame.css">
+  </html>
+  <body>
+
+
+
+  <p>コインを増やすだけのシンプルな世界</p>
+
+  <table class = "resourseBoard">
+    <tbody>
+      <tr>
+        <th class = "resourseBoard">
+          <p>Coin</p>
+        </th>
+        <th class = "resourseBoard">
+          <p>Gem</p>
+        </th>
+        <th class = "resourseBoard">
+          <p>cPs</p>
+        </th>
+      </tr>
+      <tr>
+        <td class = "resourseBoard">
+          <div id="coinBoard">0</div>
+        </td>
+        <td class = "resourseBoard">
+          <div id="gemBoard">0</div>
+        </td>
+        <td class = "resourseBoard">
+          <div id="cPtBoard">0</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  //CPSについての表示
+  <table class = "resourseBoard">
+    <tbody>
+      <tr>
+        <th class = "resourseBoard">
+          <p>cPs上限値</p>
+        </th>
+        <th class = "resourseBoard">
+          <p>cPs下限値</p>
+        </th>
+        <th class = "resourseBoard">
+          <p>半減期</p>
+        </th>
+      </tr>
+      <tr>
+        <td class = "resourseBoard">
+          <div id="cPsMaxBoard">1</div>
+        </td>
+        <td class = "resourseBoard">
+          <div id="cPsMinBoard">1</div>
+        </td>
+        <td class = "resourseBoard">
+          <div id="halflifeBoard">20</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+  <input type="button" value="手動回収" onclick="perTick()">
+  <input type="button" value="cPsをリロール" onclick="cPsreroll()">
+  <input type="button" value="cPs上限値を増やす(cost=上限値*10)" onclick="getcPs()">
+  <script src="./idlegame.js"></script>
+  </body>
+</html>
