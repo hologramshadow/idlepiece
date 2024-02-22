@@ -1,2 +1,0 @@
-# hologramshadow.github.io
-# idlepiece
