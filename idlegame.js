@@ -27,7 +27,12 @@ window.onload = ()=> {
       halve();
       dCounter=0;
     } 
-
+  var savedata = function () {
+    //セーブの処理
+     localStorage.setItem('coin',coin);
+     localStorage.setItem('cPtick',cPtick);
+     localStorage.setItem('cMax',cMax);
+    } 
   }
   var halve = function(){
     //半減期ごとの処理
