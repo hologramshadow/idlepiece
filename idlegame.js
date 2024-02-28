@@ -7,13 +7,13 @@ window.onload = ()=> {
         var cPtick =localStorage.getItem('cPtick');
         var cMax =localStorage.getItem('cMax');
     }else{
-        var coin=0,cPtick=1,cMax=0;
+        var coin=0,cPtick=1,cMax=1;
         
     }
     
   };
-  var coin=0, cPtick=1,gPtick=0,  gem=0, dCounter= 0;
-  var cPclick=1, cMax=1, gMax=20, cMin=1, gMin= 1;
+  var gPtick=0,  gem=0, dCounter= 0;
+  var cPclick=1, gMax=20, cMin=1, gMin= 1;
   var halflife = 20;
   var halfratio =50;
   var getcPs = function(){
