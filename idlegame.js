@@ -2,7 +2,7 @@ window.onload = ()=> {
 
     setInterval(perTick, 1000);
     setInterval(screenTick,1);
-    var coin =localStorage.getItem('coin');
+    var coin =localStorage.coin;
     if(coin) {
         var cPtick =localStorage.getItem('cPtick');
         var cMax =localStorage.getItem('cMax');
@@ -39,9 +39,9 @@ window.onload = ()=> {
   }
   var saveData = function () {
     //セーブの処理
-     localStorage.setItem('coin',coin);
-     localStorage.setItem('cPtick',cPtick);
-     localStorage.setItem('cMax',cMax);
+     localStorage.coin = 'coin';
+     localStorage.cPtick = 'cPtick';
+     localStorage.cMax = 'cMax';
      console.warn('セーブ機能を作りたい');
     
   }
