@@ -42,6 +42,7 @@ window.onload = ()=> {
      localStorage.setItem('coin',coin);
      localStorage.setItem('cPtick',cPtick);
      localStorage.setItem('cMax',cMax);
+     console.log('動いてる？');
     
   }
   var halve = function(){
